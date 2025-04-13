@@ -32,13 +32,13 @@ This will print the first and last 5 rows of the most recently updated series
 This doesn't however, retreive the observed values that were updated to the series. 
 
 To do this we can take note of the id (series_id) and date: 
-    ```
+    <pre>
     python
     from fredapi import run
     df = run.run_series_updates()
     for row in df.loc[:,['id', 'title, 'last_updated']].itertuples(index=False):
         print(f"{row.title}:\n{run.run_series_observations(series_id=row.id, observation_start=row.last_updated)}") 
-        ```
+     </pre>
         
 Will effortlessly fetch and print the series title and observations from that series. (I recommend adding a delay.)
 Likely you will find it easier to create a batch file to collect data from instead of the CLI. 
