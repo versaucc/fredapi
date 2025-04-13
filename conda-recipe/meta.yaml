@@ -1,0 +1,33 @@
+package:
+  name: fredapi
+  version: "0.1"
+
+source:
+  path: ..
+
+build:
+  noarch: python
+  script: pip install .
+
+requirements:
+  host:
+    - python >=3.9
+    - pip
+  run:
+    - python >=3.9
+    - pandas
+    - requests
+    - python-dotenv
+
+about:
+  home: https://github.com/versaucc/fredapi
+  license: CC BY-NC 4.0
+  license_family: CC BY-NC 4.0
+  license_file: LICENSE
+  summary: "A custom FRED API wrapper for programmatic access to economic data."
+  description: |
+    This package provides a Python wrapper for the FRED API, allowing you to easily query and store economic data with additional parameter control and organization.
+
+extra:
+  recipe-maintainers:
+    - versaucc
