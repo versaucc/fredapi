@@ -22,11 +22,11 @@
 ## Usage 
 
 Run a simple test: 
-    ```
+    <pre>
     python  
     from fredapi import run  
     print(run.run_series_updates())
-    ```
+    </pre>
 
 This will print the first and last 5 rows of the most recently updated series 
 This doesn't however, retreive the observed values that were updated to the series. 
