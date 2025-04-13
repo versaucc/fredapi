@@ -1,0 +1,16 @@
+name: fredapi
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pandas=1.5.3
+  - numpy=1.23.5
+  - requests
+  - python-dotenv
+  - matplotlib
+  - pip
+  - pip:
+      - e . 
+      - tqdm
