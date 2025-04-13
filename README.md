@@ -24,7 +24,7 @@
 Run a simple test: 
     <pre>
     ```
-    python\
+    python<br\>
     from fredapi import run\
     print(run.run_series_updates())\
     ```</pre>
