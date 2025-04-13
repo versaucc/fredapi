@@ -4,19 +4,22 @@
 1. Clone this repository, cd into it. 
 
 2. With Anaconda3 installed (link to conda) run: 
+<pre>
     conda create -n fredapi
     conda activate fredapi
-
+</pre>
 3. Install the package in development mode 
-    pip install -e .
+    <pre>pip install -e . </pre>
 
 4. Verify the install 
+<pre>
     python 
     from fredapi import run
-
+</pre>
 5. Set environment variables
+<pre>
     cp .env.example .env
-
+</pre>
 6. Go take a minute to read run.py, this is the entrypoint to all FRED requests. 
 
 ## Usage 
