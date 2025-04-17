@@ -1,4 +1,4 @@
-name: fredapi
+name: fredapi-py
 channels:
   - conda-forge
   - defaults
