@@ -1,5 +1,5 @@
 package:
-  name: fredapi
+  name: fredapi-py
   version: "0.1"
 
 source:
@@ -20,7 +20,7 @@ requirements:
     - python-dotenv
 
 about:
-  home: https://github.com/versaucc/fredapi
+  home: https://github.com/versaucc/fredapi-py
   license: CC BY-NC 4.0
   license_family: CC BY-NC 4.0
   license_file: LICENSE
