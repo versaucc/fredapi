@@ -14,7 +14,7 @@
 4. Verify the install 
 <pre>
     python 
-    from fredapi-py import run
+    from fredapi import run
 </pre>
 5. Set environment variables
 <pre>
@@ -27,7 +27,7 @@
 Run a simple test: 
     <pre>
     python  
-    from fredapi-py import run  
+    from fredapi import run  
     print(run.run_series_updates())
     </pre>
 
@@ -37,7 +37,7 @@ This doesn't however, retreive the observed values that were updated to the seri
 To do this we can take note of the id (series_id) and date: 
     <pre>
     python
-    from fredapi-py import run
+    from fredapi import run
     df = run.run_series_updates()
     for row in df.loc[:,['id', 'title, 'last_updated']].itertuples(index=False):
         print(f"{row.title}:\n{run.run_series_observations(series_id=row.id, observation_start=row.last_updated)}") 
