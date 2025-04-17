@@ -5,8 +5,8 @@
 
 2. With Anaconda3 installed (link to conda) run: 
 <pre>
-    conda create -n fredapi
-    conda activate fredapi
+    conda create -n fredapi-py
+    conda activate fredapi-py
 </pre>
 3. Install the package in development mode 
     <pre>pip install -e . </pre>
@@ -14,7 +14,7 @@
 4. Verify the install 
 <pre>
     python 
-    from fredapi import run
+    from fredapi-py import run
 </pre>
 5. Set environment variables
 <pre>
@@ -27,7 +27,7 @@
 Run a simple test: 
     <pre>
     python  
-    from fredapi import run  
+    from fredapi-py import run  
     print(run.run_series_updates())
     </pre>
 
@@ -37,7 +37,7 @@ This doesn't however, retreive the observed values that were updated to the seri
 To do this we can take note of the id (series_id) and date: 
     <pre>
     python
-    from fredapi import run
+    from fredapi-py import run
     df = run.run_series_updates()
     for row in df.loc[:,['id', 'title, 'last_updated']].itertuples(index=False):
         print(f"{row.title}:\n{run.run_series_observations(series_id=row.id, observation_start=row.last_updated)}") 
