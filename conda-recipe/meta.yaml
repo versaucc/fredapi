@@ -21,8 +21,8 @@ requirements:
 
 about:
   home: https://github.com/versaucc/fredapi-py
-  license: CC BY-NC 4.0
-  license_family: CC BY-NC 4.0
+  license: Apache 2.0
+  license_family: Apache
   license_file: LICENSE
   summary: "A custom FRED API wrapper for programmatic access to economic data."
   description: |
